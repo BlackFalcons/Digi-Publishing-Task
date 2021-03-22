@@ -27,8 +27,8 @@
         }
 
         #main {
-            margin-left: 30rem;
-            max-width: 50rem;
+            margin-left: 25rem;
+            max-width: 45rem;
         }
 
         #bullet-points {
@@ -37,7 +37,8 @@
         }
 
         #images {
-            margin-left: 10rem;
+            margin-left: 75rem;
+            margin-top: -40rem;
         }
 
         #blue-box {
@@ -48,18 +49,35 @@
             font-family: 'Montserrat', sans-serif;
             background-color: #00A0CE;
             color: white;
+            margin-left: -5.5rem;
+            position: fixed;
+            margin-top: 19.5rem;
         }
 
         #blue-box > p {
             font-size: 1.6rem;
         }
 
+        #stone-image, #arena-image {
+            position: fixed;
+        }
+
+        #stone-image {
+
+        }
+
+        #arena-image {
+            margin-top: 21.5rem;
+            margin-left: 9rem;
+        }
+
         .center-left {
-            margin-left: 30rem;
+            margin-left: 25rem;
         }
 
         .info-text {
             font-family: Arial, sans-serif;
+            line-height: 1.4rem;
         }
 
         .bullet-point {
@@ -78,7 +96,7 @@
             display: block;
             float: left;
             border: #00A0CE solid;
-            margin: 1.5rem 1.5rem 2rem 0;
+            margin: 1.5rem 1.5rem 2.5rem 0;
             border-radius: 50%;
         }
 
@@ -94,11 +112,7 @@
             content: url("icons/people-fill.svg");
         }
 
-        .container {
-            flex-direction: row;
-        }
-
-        @media only screen and (max-width: 1315px) {
+        @media only screen and (max-width: 1621px) {
             .center-left {
                 margin-left: 0;
             }
@@ -110,11 +124,23 @@
 
             #images {
                 margin-left: 6.5rem;
+                margin-top: 0;
             }
 
             #blue-box {
                 display: inline-block;
                 vertical-align: top;
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+            #stone-image, #arena-image, #blue-box {
+                position: relative;
+            }
+
+            #arena-image {
+                margin-top: 0;
+                margin-left: 0;
             }
         }
 
@@ -159,15 +185,15 @@
             </p>.
         </div>
     </div>
-    <div id="images" class="container">
-        <img src="images/stone-blocks.jpg" alt="Image of stone blocks." width="200" height="300">
-        <img src="images/arena.jpg" alt="Image of an ancient arena" width="200" height="300">
-        <div id="blue-box">
-            <p>Consequat</p>
-            <p>Duies</p>
-            <p>1450</p>
-        </div>
-    </div>
 </main>
+<div id="images">
+    <img id="stone-image" src="images/stone-blocks.jpg" alt="Image of stone blocks." width="200" height="300">
+    <img id="arena-image" src="images/arena.jpg" alt="Image of an ancient arena" width="200" height="300">
+    <div id="blue-box">
+        <p>Consequat</p>
+        <p>Duies</p>
+        <p>1450</p>
+    </div>
+</div>
 </body>
 </html>
