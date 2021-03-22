@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Digi Publishing</title>
+    <!-- Montserrat fonts (Better to download fonts locally) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("images/concrete-background.jpg");
+        }
+
+        #header-main-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: #3e3e3e;
+            font-size: 2.5rem;
+        }
+
+        #header-color {
+            color: #00A0CE;
+        }
+
+        #main {
+            margin-left: 30rem;
+            max-width: 50rem;
+        }
+
+        #bullet-points {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        #images {
+            margin-left: 10rem;
+        }
+
+        #blue-box {
+            height: 250px;
+            width: 184px;
+            padding-top: 3.1875rem;
+            padding-left: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #00A0CE;
+            color: white;
+        }
+
+        #blue-box > p {
+            font-size: 1.6rem;
+        }
+
+        .center-left {
+            margin-left: 30rem;
+        }
+
+        .info-text {
+            font-family: Arial, sans-serif;
+        }
+
+        .bullet-point {
+            padding-top: 1rem;
+        }
+
+        .bullet-point-header {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+        }
+
+        .bullet-point:before {
+            height: 2rem;
+            width: 2rem;
+            padding: 1.3rem;
+            display: block;
+            float: left;
+            border: #00A0CE solid;
+            margin: 1.5rem 1.5rem 2rem 0;
+            border-radius: 50%;
+        }
+
+        .waterdrop-icon:before {
+            content: url("icons/droplet-fill.svg");
+        }
+
+        .water-icon:before {
+            content: url("icons/water.svg");
+        }
+
+        .people-icon:before {
+            content: url("icons/people-fill.svg");
+        }
+
+        .container {
+            flex-direction: row;
+        }
+
+        @media only screen and (max-width: 1315px) {
+            .center-left {
+                margin-left: 0;
+            }
+
+            #main {
+                margin-left: 0;
+                max-width: available;
+            }
+
+            #images {
+                margin-left: 6.5rem;
+            }
+
+            #blue-box {
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+
+        @media only screen and (max-width: 813px) {
+            .bullet-point:before {
+                float: revert;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<header id="header">
+    <h1 id="header-main-text" class="center-left">
+        Lorem ipsum dolor sit<br/>amet <span id="header-color">consectetur<br/>apipisicing elit</span>
+    </h1>
+    <p class="center-left info-text">Pellentesque hendrerit eros mauris, sed feugiat ipsum lacinia vitae.</p>
+</header>
+<main id="main">
+    <div id="bullet-points">
+        <div class="bullet-point waterdrop-icon">
+            <h4 class="bullet-point-header info-text">Lorem ipsum</h4>
+            <p class="info-text">
+                Sed fermentum venenatis nunc, a auctor libero fermentum vulputate. Phasellus
+                condimentum ornare condimentum.
+            </p>
+        </div>
+        <div class="bullet-point water-icon">
+            <h4 class="bullet-point-header info-text">Lorem ipsum</h4>
+            <p class="info-text">
+                Aenean ullamcorper accumsan orci id vulputate. Nam sagittis est in ornare
+                scelerisque. Curabitur viverra sit amet ligula et volutpat. Nam lorem lectus, placerat nec viverra nec,
+                faucibus at libero.
+            </p>
+        </div>
+        <div class="bullet-point people-icon">
+            <h4 class="bullet-point-header info-text">Lorem ipsum</h4>
+            <p class="info-text">
+                Sed fermentum augue ut sem tempus, in blandit neque tempus. Nullam nec aliquet
+                dolor, feugiat vehicula magna. Pellentesque mattis orci non luctus vehicula. Integer tempor lorem a
+                massa consectetur ultricies.
+            </p>.
+        </div>
+    </div>
+    <div id="images" class="container">
+        <img src="images/stone-blocks.jpg" alt="Image of stone blocks." width="200" height="300">
+        <img src="images/arena.jpg" alt="Image of an ancient arena" width="200" height="300">
+        <div id="blue-box">
+            <p>Consequat</p>
+            <p>Duies</p>
+            <p>1450</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>
